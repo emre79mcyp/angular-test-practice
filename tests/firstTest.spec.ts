@@ -1,7 +1,7 @@
 import { test, expect } from 'playwright/test';
 
 test.beforeEach('the first test', async ({ page }) => {
-    await page.goto('http://localhost:4200/pages/iot-dashboard', {
+    await page.goto('/pages/iot-dashboard', {
         waitUntil: 'networkidle',
     });
     await page.getByText('Forms').click();
